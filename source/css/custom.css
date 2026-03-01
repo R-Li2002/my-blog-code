@@ -1,0 +1,98 @@
+/* source/css/custom.css */
+
+/* 1. 顶部导航栏激活状态的下划线 */
+.navbar .navbar-nav .nav-item .nav-link:after {
+    background-color: #81A1C1 !important;
+}
+
+/* 2. 修改文章中的行内代码块样式 */
+p code, li code {
+    background-color: rgba(129, 161, 193, 0.1) !important;
+    color: #81A1C1 !important;
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+}
+/* === 打赏与分享模块 Nord 风格美化 === */
+.post-reward-share {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+/* 打赏按钮 */
+.reward-btn {
+    background-color: transparent !important;
+    color: #81A1C1 !important;
+    border: 2px solid #81A1C1 !important;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.reward-btn:hover {
+    background-color: #81A1C1 !important;
+    color: #FFF !important;
+    box-shadow: 0 4px 12px rgba(129, 161, 193, 0.4);
+}
+
+/* 展开的二维码区域 */
+.reward-qr img {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(129, 161, 193, 0.3);
+    padding: 5px;
+}
+
+/* 简单的渐显动画 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 分享图标美化 */
+.social-share {
+    margin-top: 20px;
+}
+.social-share a {
+    color: #81A1C1 !important;
+    border-color: #81A1C1 !important;
+    transition: all 0.3s ease;
+}
+.social-share a:hover {
+    background-color: #81A1C1 !important;
+    color: #FFF !important;
+}
+/* === Nord 风格全局深度优化 === */
+
+/* 1. 鼠标选中文字时的背景色 (冰雪蓝) */
+::selection {
+    background-color: rgba(129, 161, 193, 0.4) !important; /* Nord 9 */
+    color: inherit;
+}
+
+/* 2. 修改全局卡片阴影为冷色调 (理性沉稳) */
+.card, .index-card {
+    box-shadow: 0 4px 12px 0 rgba(46, 52, 64, 0.08) !important; /* 基于 Nord 0 的极光浅阴影 */
+    border-radius: 8px !important; /* 稍微锐利一点的圆角更显理性 */
+    transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+}
+
+.card:hover, .index-card:hover {
+    box-shadow: 0 8px 24px 0 rgba(46, 52, 64, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+/* 3. 暗色模式下的深邃阴影 */
+html[data-user-color-scheme="dark"] .card, 
+html[data-user-color-scheme="dark"] .index-card {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 4. 图片加载动画颜色匹配 */
+.markdown-body img {
+    border-radius: 6px;
+}

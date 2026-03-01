@@ -63,8 +63,8 @@ code:
       # 在链接中挑选 style 填入
       # Select a style in the link
       # See: https://highlightjs.org/demo/
-      style: "github gist"
-      style_dark: "dark"
+      style: "nord"
+      style_dark: "nord"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
@@ -138,96 +138,74 @@ dark_mode:
 # Theme color, please use custom CSS to solve other colors, color schema can be inspired by the links below
 # See: https://www.webdesignrankings.com/resources/lolcolors/
 color:
-  # body 背景色
-  # Color of body background
-  body_bg_color: "#eee"
-  # 暗色模式下的 body 背景色，下同
-  # Color in dark mode, the same below
-  body_bg_color_dark: "#181c27"
+  # body 背景色 - 亮色使用 Nord 雪白 / 暗色使用 Nord 极夜深
+  body_bg_color: "#ECEFF4"        # Nord 6 (最亮雪白)
+  body_bg_color_dark: "#2E3440"   # Nord 0 (最深极夜)
 
-  # 顶部菜单背景色
-  # Color of navigation bar background
-  navbar_bg_color: "#2f4154"
-  navbar_bg_color_dark: "#1f3144"
+  # 顶部菜单背景色 - 使用 Nord 蓝灰色系
+  navbar_bg_color: "#3B4252"      # Nord 1
+  navbar_bg_color_dark: "#242933" # 更深的极夜
 
   # 顶部菜单字体色
-  # Color of navigation bar text
-  navbar_text_color: "#fff"
-  navbar_text_color_dark: "#d0d0d0"
+  navbar_text_color: "#ECEFF4"    # 雪白文字
+  navbar_text_color_dark: "#D8DEE9" # 略暗的灰白
 
-  # 副标题字体色
-  # Color of subtitle text
-  subtitle_color: "#fff"
-  subtitle_color_dark: "#d0d0d0"
+  # 副标题字体色 (Banner 上的文字)
+  subtitle_color: "#ECEFF4"
+  subtitle_color_dark: "#D8DEE9"
 
   # 全局字体色
-  # Color of global text
-  text_color: "#3c4858"
-  text_color_dark: "#c4c6c9"
+  text_color: "#2E3440"           # 极夜黑文字
+  text_color_dark: "#D8DEE9"      # 灰白文字
 
-  # 全局次级字体色（摘要、简介等位置）
-  # Color of global secondary text (excerpt, introduction, etc.)
-  sec_text_color: "#718096"
-  sec_text_color_dark: "#a7a9ad"
+  # 全局次级字体色
+  sec_text_color: "#4C566A"       # Nord 3 (深灰)
+  sec_text_color_dark: "#9BA3B0"  # 中灰
 
-  # 主面板背景色
-  # Color of main board
-  board_color: "#fff"
-  board_color_dark: "#252d38"
+  # 主面板背景色 (Board)
+  board_color: "#FFFFFF"          # 纯白面板
+  board_color_dark: "#3B4252"     # Nord 1 (深蓝灰面板)
 
   # 文章正文字体色
-  # Color of post text
-  post_text_color: "#2c3e50"
-  post_text_color_dark: "#c4c6c9"
+  post_text_color: "#3B4252"      # Nord 1
+  post_text_color_dark: "#E5E9F0" # Nord 5
 
-  # 文章正文字体色（h1 h2 h3...）
-  # Color of Article heading (h1 h2 h3...)
-  post_heading_color: "#1a202c"
-  post_heading_color_dark: "#c4c6c9"
+  # 文章标题颜色 (h1-h6)
+  post_heading_color: "#2E3440"   # 极夜黑
+  post_heading_color_dark: "#ECEFF4" # 雪白
 
-  # 文章超链接字体色
-  # Color of post link
-  post_link_color: "#0366d6"
-  post_link_color_dark: "#1589e9"
+  # 文章超链接字体色 - 使用你最爱的淡蓝色
+  post_link_color: "#81A1C1"      # Nord 9 (你的指定蓝)
+  post_link_color_dark: "#88C0D0" # Nord 8 (稍亮的冰蓝)
 
   # 超链接悬浮时字体色
-  # Color of link when hovering
-  link_hover_color: "#30a9de"
-  link_hover_color_dark: "#30a9de"
+  link_hover_color: "#5E81AC"     # Nord 10 (深蓝)
+  link_hover_color_dark: "#8FBCBB" # Nord 7 (青蓝)
 
   # 超链接悬浮背景色
-  # Color of link background when hovering
-  link_hover_bg_color: "#f8f9fa"
-  link_hover_bg_color_dark: "#364151"
+  link_hover_bg_color: "#E5E9F0"
+  link_hover_bg_color_dark: "#434C5E"
 
-  # 分隔线和表格边线的颜色
-  # Color of horizontal rule and table border
-  line_color: "#eaecef"
-  line_color_dark: "#435266"
+  # 分隔线颜色
+  line_color: "#D8DEE9"
+  line_color_dark: "#4C566A"
 
   # 滚动条颜色
-  # Color of scrollbar
-  scrollbar_color: "#c4c6c9"
-  scrollbar_color_dark: "#687582"
-  # 滚动条悬浮颜色
-  # Color of scrollbar when hovering
-  scrollbar_hover_color: "#a6a6a6"
-  scrollbar_hover_color_dark: "#9da8b3"
+  scrollbar_color: "#D8DEE9"
+  scrollbar_color_dark: "#4C566A"
+  scrollbar_hover_color: "#81A1C1"
+  scrollbar_hover_color_dark: "#81A1C1"
 
-  # 按钮背景色
-  # Color of button
+  # 按钮配置
   button_bg_color: "transparent"
   button_bg_color_dark: "transparent"
-  # 按钮悬浮背景色
-  # Color of button when hovering
-  button_hover_bg_color: "#f2f3f5"
-  button_hover_bg_color_dark: "#46647e"
-
+  button_hover_bg_color: "#E5E9F0"
+  button_hover_bg_color_dark: "#4C566A"
 # 主题字体配置
 # Font
 font:
   font_size: 16px
-  font_family:
+  font_family: "'Inter', 'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', sans-serif"
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -237,8 +215,9 @@ custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-custom_css:
-
+# 指定自定义 .css 文件路径
+custom_css: 
+  - /css/custom.css  # 这里的横杠前面要有两个空格，后面有一个空格
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:
@@ -348,12 +327,12 @@ iconfont: //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "Fluid"
+  blog_title: ""
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    enable: false
+    enable: true
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -708,7 +687,7 @@ post:
     # The image url replacement when zooming, the feature can be used to replace the compressed image to the original image, eg: ['-slim', ''] removes `-slim` from the image url when zooming; if you want to use regular, use prefix `re:`, eg: ['re:\\d{3,4}\\/\\d{3,4}\\/','']
     img_url_replace: ['', '']
 
-  # 脚注语法，会在文章底部生成脚注，如果 Markdown 渲染器本身支持，则建议关闭，否则可能会冲突
+   # 脚注语法，会在文章底部生成脚注，如果 Markdown 渲染器本身支持，则建议关闭，否则可能会冲突
   # Support footnote syntax, footnotes will be generated at the bottom of the post page. If the Markdown renderer itself supports it, please disable it, otherwise it may conflict
   footnote:
     enable: true
