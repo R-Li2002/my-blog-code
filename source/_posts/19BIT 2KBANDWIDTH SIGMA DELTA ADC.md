@@ -6,7 +6,7 @@ tags:
 categories:
   - 
 excerpt: ""
-index_img: /img/banner1.jpg
+index_img:
 banner_img: /img/banner2.jpeg
 sticky: 0
 ---
