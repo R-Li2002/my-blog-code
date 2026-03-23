@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="/img/alipay.png" alt="Alipay reward">
         </div>
       </div>
-      <div class="social-share" data-sites="wechat,weibo,qq,twitter"></div>
+      <div class="social-share" data-sites="wechat,weibo,qq"></div>
     </div>
     `;
 
