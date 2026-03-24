@@ -448,9 +448,9 @@ footer:
     # ICP证号
     icp_text: 京ICP备2026013218号-1
     # 公安备案号，不填则只显示ICP
-    police_text:
+    police_text: 京公网安备11010802047886号
     # 公安备案的编号，用于URL跳转查询
-    police_code:
+    police_code: 11010802047886
     # 公安备案的图片. 为空时不显示备案图片
     police_icon: /img/police_beian.png
 
